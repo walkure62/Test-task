@@ -10,7 +10,7 @@ function changeLang() {
             ;
     } else {
         googlePlay.innerHTML =
-            '<img src="images/googleplay-RU.png" alt="googlePlay">'
+            '<img src="images/googlePlay-RU.png" alt="googlePlay">'
             ;
     }
 }
