@@ -1,0 +1,173 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+body {
+  position: relative;
+  background-image: url(../images/bg/bg4.jpg);
+  height: 1080px;
+  width: 1920px;
+  background-repeat: no-repeat;
+  /* background-size: 100%;  */ }
+
+.wrapper {
+  min-height: 1080px; }
+
+.csa-head {
+  height: 1080px;
+  width: 1920px; }
+
+.content-box {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 570px;
+  width: 350px; }
+
+.content-box .logo {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-bottom: 25px; }
+
+.content-box__form {
+  height: 300px;
+  width: 300px; }
+  .content-box__form input {
+    height: 40px;
+    width: 260px;
+    margin-left: 46px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+    color: #4e4e4e;
+    font-family: 'Ubuntu-Light';
+    font-size: 16px; }
+  .content-box__form button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid #ff8041;
+    border-radius: 2px;
+    background: #ff8041;
+    width: 260px;
+    height: 40px;
+    margin-left: 46px;
+    margin-top: -8px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+  .content-box__form a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 130px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #385dae; }
+
+.content-box__footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #000;
+  width: 100%;
+  height: 95px; }
+  .content-box__footer .content-box__footer_googlePlay {
+    width: 260px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-left: 45px;
+    margin-top: 25px; }
+    .content-box__footer .content-box__footer_googlePlay img {
+      margin-left: 80px; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  color: white;
+  text-align: center;
+  bottom: 0; }
+  footer .footer__sidebar {
+    display: block;
+    position: relative;
+    width: 730px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 595px; }
+  footer ul {
+    padding: 4px;
+    /* Значение полей */
+    float: left; }
+  footer ul, footer li {
+    display: inline-block;
+    /* Отображать как строчный элемент */
+    padding: 3px;
+    /* Поля вокруг текста */ }
+  footer li {
+    display: inline-block;
+    margin-right: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer; }
+  footer li:last-child {
+    font-weight: 700; }
+  footer .use.mail-1 {
+    fill: #ccc; }
+  footer .use.phone-1 {
+    fill: #ccc; }
+  footer .use.lang-1 {
+    fill: #ccc; }
+  footer .icon_email, footer .icon_phone, footer .icon_lang {
+    display: block;
+    margin-right: 10px;
+    margin-top: 3px;
+    float: left; }
+  footer .icon_lang {
+    position: absolute;
+    margin-top: 10px; }
+  footer .lang-select {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    right: 0; }
+    footer .lang-select select {
+      display: block;
+      width: 25px;
+      height: 15px;
+      background: none;
+      border: none;
+      color: #fff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      float: left;
+      outline: none;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-left: 25px; }
+    footer .lang-select .arrow {
+      display: block;
+      position: relative;
+      margin-top: 15px;
+      margin-right: 0px; }
