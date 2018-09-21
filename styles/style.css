@@ -38,7 +38,6 @@ body {
   height: 100%;
   width: 100%;
   min-height: 100%;
-  padding-bottom: 100px;
   margin: 0; }
 
 .content-box {
@@ -202,3 +201,11 @@ footer {
       position: relative;
       margin-top: 13px;
       margin-right: 0px; }
+
+@media screen and (max-height: 820px) {
+  .content-box {
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15%);
+    -ms-transform: translate(-50%, -15%);
+    transform: translate(-50%, -15%); } }
