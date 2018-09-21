@@ -12,12 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./js/main.js"></script>
     <script defer src="./js/change_language.js"></script>
+    <script defer src="./js/entrance_error_sucsess.js"></script>
     <script src="./js/jquery-3.3.1.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="csa-head"></div>
+        <div class="content">
         <div class="content-box">
             <div class="content-box__header">
                 <div class="content-box__header_logo">
@@ -25,12 +27,15 @@
                 </div>
             </div>
             <div class="content-box__form">
-                <input type="text" placeholder="GLN">
-                <input type="email" placeholder="Пользователь">
-                <input type="password" placeholder="Пароль">
+                <form action="login" method=”post”>
+                <input class="content-box__form_GLN" type="text" placeholder="GLN" required>
+                <input class="content-box__form_email" value="" type="text" placeholder="Пользователь" required>
+                <input class="content-box__form_password" type="password" placeholder="Пароль" required>
                 <button type="submit">Войти</button>
+            </form>
                 <a href="">Онлайн-демо</a>
-            </div>
+        </div>
+
             <div class="content-box__footer">
                 <a href="https://play.google.com/store">
                     <div class="content-box__footer_googlePlay">
@@ -39,6 +44,7 @@
                 </a>
             </div>
         </div>
+    </div>
     </div>
 
     <footer>

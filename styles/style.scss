@@ -4,28 +4,45 @@
 }
 
 html {
-    width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    min-width: 768px;
+    min-height: 800px;
 }
 body {
     position: relative;
     background-image: url(../images/bg/bg4.jpg);
-    height: 1080px;
-    width: 1920px;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
-    /* background-size: 100%;  */
 }
 
 .wrapper {
-    min-height: 1080px; 
-    // margin-bottom: -82px;
+    position: relative;
+    margin: 0 auto;
+    height: auto !important;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;  //-  Нужно для прижатия футера к низу
   }
 
 .csa-head {
-    height: 1080px;
-    width: 1920px;
+    position: absolute;
 
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.content {
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 100px;
+    margin: 0;
 }
 
 .content-box {
@@ -45,6 +62,22 @@ body {
         margin-left: 60px;
         margin-bottom: 25px;
     }
+}
+
+form {
+    max-width: 350px;
+
+    input {
+        position: relative;
+    }
+
+    input:valid {
+    border-bottom: #0ab289 2px solid;
+    }
+    input:hover {
+        border-bottom: #385dae 2px solid;
+    }
+
 }
 
 .content-box__form {
@@ -93,6 +126,7 @@ body {
         font-size: 14px;
         color: #385dae;
     }
+
 }
 
 .content-box__footer{
@@ -104,6 +138,8 @@ body {
     height: 95px;
 
     .content-box__footer_googlePlay {
+        display: block;
+        position: relative;
         width: 260px;
         height: 40px;
         border: 1px solid #fff;
@@ -112,7 +148,10 @@ body {
         margin-top: 25px;
 
         img {
-            margin-left: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
     }
@@ -121,19 +160,20 @@ body {
 footer {
   position: absolute;
   width: 100%;
-  height: 80px;
-  background: #000;
+  background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
-  bottom: 0;
+  height: 80px;
+  margin-top: -80px;
 
   .footer__sidebar {
       display: block;
-      position: relative;
+      position: absolute;
       width: 730px;
       height: 30px;
       margin-top: 30px;
-      margin-left: 595px;
+      left: 50%;
+      transform: translate(-50%, 0); 
   }
 
   ul {
@@ -157,16 +197,6 @@ footer {
     font-weight: 700;
    }
 
-   .use.mail-1 {
-    fill: #ccc;
-}
-   .use.phone-1 {
-    fill: #ccc;
-}
-   .use.lang-1 {
-    fill: #ccc;
-   }
-
    .icon_email, .icon_phone, .icon_lang {
        display: block;
        margin-right: 10px;
@@ -176,7 +206,7 @@ footer {
 
    .icon_lang {
        position: absolute;
-       margin-top: 10px;
+       margin-top: 8px;
    }
 
    .lang-select {
@@ -197,19 +227,15 @@ footer {
         float: left;
         outline: none;
         cursor: pointer;
-        margin-top: 10px;
+        margin-top: 8px;
         margin-left: 25px;
-
-        option {
-        
-        }
        }
 
        .arrow {
            display: block;
            position: relative;
-           margin-top: 15px;
+           margin-top: 13px;
            margin-right: 0px;
        }
-   }
+    }
 }
