@@ -6,7 +6,7 @@
 html {
     height: 100%;
     min-width: 768px;
-    min-height: 800px;
+    min-height: 100%;
 }
 body {
     position: relative;
@@ -27,11 +27,11 @@ body {
 
 .csa-head {
     position: absolute;
-
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
+    bottom: 80px;
 
 }
 
@@ -51,8 +51,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 570px;
-    width: 350px;
+    // height: 570px;
+    height: 36rem;
+    // width: 350px;
+    width: 22rem;
 }
 
 .content-box {

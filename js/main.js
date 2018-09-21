@@ -17,6 +17,8 @@ function csaHead() {
 			i = 1;
 
 			$('.csa-head').css({ 'background': 'url(' + imgHead[0] + ')' });
+			$('.csa-head').css({ 'background-position': 'center' });
+			$('.csa-head').css({ 'background-repeat': 'no-repeat' });
 
 		});
 
@@ -25,10 +27,12 @@ function csaHead() {
 	} else {
 
 		$('.csa-head').animate({ 'opacity': '0' }, 200, function () {
+			
+			$('body').css({ 'background': 'none' });
 
 			$('.csa-head').css({ 'background': 'url(' + imgHead[i] + ')' });
 
-			$('.csa-head').css({ 'background-size': '100%' });
+			$('.csa-head').css({ 'background-position': 'center' });
 
 			$('.csa-head').css({ 'background-repeat': 'no-repeat' });
 
